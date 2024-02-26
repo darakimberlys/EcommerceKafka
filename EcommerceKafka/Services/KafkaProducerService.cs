@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Confluent.Kafka;
 using EcommerceKafka.Data;
+using EcommerceKafka.Services.Interfaces;
 
 namespace EcommerceKafka.Services;
 
@@ -13,7 +14,7 @@ public class KafkaProducerService : IKafkaProducerService
     {
         var config = new ProducerConfig { BootstrapServers = "localhost:9092" };
         _producer = new ProducerBuilder<Null, string>(config).Build();
-        _topic = "PEDIDO";
+        _topic = "PEDIDOS";
     }
 
     public async Task SendMessageAsync(Order message) 

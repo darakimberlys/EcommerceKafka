@@ -1,6 +1,6 @@
 using EcommerceKafka.Data;
 
-namespace EcommerceKafka.Services;
+namespace EcommerceKafka.Services.Interfaces;
 
 public interface IKafkaProducerService
 {
