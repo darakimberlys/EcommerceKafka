@@ -19,4 +19,4 @@ The only goal of this project is to create a simplified e-commerce store using K
 
 ## License
 
-This project is licensed under the **MIT License** - feel free to use it for learning purposes.
+Feel free to use it for learning purposes.
